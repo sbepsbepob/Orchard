@@ -1,0 +1,10 @@
+﻿Name: smu.VotedNews
+AntiForgery: enabled
+Author: Slobodan Mumovic
+Website: http://raiseglobalawareness.org
+Version: 1.0
+OrchardVersion: 1.9
+Description: Implements news items and features for voting up/down news stories
+Features:
+    smu.VotedNews:
+        Description: Core voted news featues - news content part, modified user data, statistics, etc...
