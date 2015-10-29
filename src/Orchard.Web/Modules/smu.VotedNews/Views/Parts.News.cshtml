@@ -1,0 +1,14 @@
+﻿@{
+    var isFeatured = (bool)Model.IsFeatured;
+    var isSticky = (bool)Model.IsSticky;
+    var weight = (int)Model.Weight;
+}
+<article>
+    Is Featured: @isFeatured<br />
+    Is Sticky: @isSticky<br />
+    Weight: @weight<br />
+    <footer>
+        <button>Agree</button>
+        <button>Disagree</button>
+    </footer> 
+</article>

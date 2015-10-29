@@ -1,4 +1,4 @@
-﻿Name: smu.VotedNews
+﻿Name: Smu.VotedNews
 AntiForgery: enabled
 Author: Slobodan Mumovic
 Website: http://raiseglobalawareness.org
@@ -8,5 +8,5 @@ Description: Implements news items and features for voting up/down news stories
 Category: News
 Features:
     Smu.VotedNews:
-		Dependencies: Orchard.PublishLater, Orchard.MediaPicker, Orchard.Autoroute
+		Dependencies: Orchard.PublishLater, Orchard.MediaPicker, Orchard.Autoroute, Orchard.Taxonomies, Orchard.Projections
         Description: Core voted news featues - news content part, modified user data, statistics, etc...

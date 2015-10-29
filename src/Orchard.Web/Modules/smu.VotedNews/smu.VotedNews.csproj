@@ -73,6 +73,9 @@
   <ItemGroup>
     <Content Include="Assets.json" />
     <Content Include="Assets\Styles.less" />
+    <Content Include="Recipes\CreateBasicFeaturedNewsStoryQuery.recipe.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Styles\Styles.css" />
     <Content Include="Styles\Styles.min.css" />
     <Content Include="Web.config" />
@@ -108,6 +111,10 @@
       <Project>{43d0ec0b-1955-4566-8d31-7b9102da1703}</Project>
       <Name>Orchard.MediaPicker</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Orchard.Projections\Orchard.Projections.csproj">
+      <Project>{5531e894-d259-45a3-aa61-26dbe720c1ce}</Project>
+      <Name>Orchard.Projections</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Orchard.PublishLater\Orchard.PublishLater.csproj">
       <Project>{c889167c-e52c-4a65-a419-224b3d1b957d}</Project>
       <Name>Orchard.PublishLater</Name>
@@ -131,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drivers\NewsPartDriver.cs" />
+    <Compile Include="Filters\NewsPartFilter.cs" />
     <Compile Include="Handlers\NewsPartHandler.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\NewsPart.cs" />
@@ -144,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.News.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

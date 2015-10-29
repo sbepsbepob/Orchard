@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
 using Smu.VotedNews.Models;
@@ -27,6 +25,16 @@ namespace Smu.VotedNews.Drivers
             updater.TryUpdateModel(part, Prefix, null, null);
             return Editor(part, shapeHelper);
         }
+
+        protected override DriverResult Display(NewsPart news, string displayType, dynamic shapeHelper)
+        {
+            return ContentShape("Parts_News", () => shapeHelper.Parts_News(
+                IsFeatured: news.IsFetured,
+                IsSticky: news.IsSticky,
+                Weight: news.Weight
+            ));
+        }
+
 
     }
 }

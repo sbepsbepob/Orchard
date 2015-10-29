@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Orchard>
+  <Recipe>
+    <Name>Create Basic Featured News Story Query</Name>
+    <Description>Creates a basic projection query that utilizes the Smu.VotedNews module.</Description>
+    <Author>Slobodan Mumovic</Author>
+    <WebSite></WebSite>
+    <Tags>Featured, Smu.VotedNews</Tags>
+    <Version>1.0</Version>
+  </Recipe>
+  
+  <Feature enable="Smu.VotedNews" />
+
+  <Data>
+    <Query Id="/Identifier=35332678487c44d992a66e56f28321be" Status="Published">
+      <IdentityPart Identifier="35332678487c44d992a66e56f28321be" />
+      <TitlePart Title="Featured News Stories" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="NewsPartRecord" Description="Featured News Stories Only" Position="1" State="&lt;Form&gt;&lt;Description&gt;Featured News Stories Only&lt;/Description&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/Form&gt;" Type="IsFeatured" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria>
+          
+        </SortCriteria>
+        <Layouts>
+          
+        </Layouts>
+      </QueryPart>
+    </Query>
+  </Data>
+</Orchard>

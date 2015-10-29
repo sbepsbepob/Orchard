@@ -68,5 +68,26 @@ namespace Smu.VotedNews
 
             return 2;
         }
+
+        public int UpdateFrom2()
+        {
+            
+            ContentDefinitionManager.AlterTypeDefinition("NewsStory", type => type
+                .WithPart(typeof(TitlePart).Name)
+                .WithPart(typeof(NewsPart).Name)
+                .WithPart(typeof(CommonPart).Name)
+                .WithPart(typeof(AutoroutePart).Name)
+                .WithPart(typeof(PublishLaterPart).Name)
+                .WithPart(typeof(BodyPart).Name)
+                .WithPart(typeof(CommentsPart).Name)
+                .WithPart(typeof(TagsPart).Name)
+                .RemovePart(typeof(TaxonomyPart).Name)
+                .Listable()
+                .Creatable()
+                .Draftable()
+                );
+
+            return 3;
+        }
     }
 }
