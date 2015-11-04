@@ -1,8 +1,11 @@
 ﻿<Placement>
-  <Place Parts_News_Edit="Content:1" />
   <Place Parts_News="Content:0" />
+  <Place Parts_News_Edit="Content:1" />
+  <Place Parts_News_Comments="Content:2" />
+  <Place Parts_News_VoteButtons="Content:3" />
+  
   <Place Parts_Common_Body_Summary="-" />
-
+  
   <Match DysplayType="Detail">
     <Place Fields_Common_Text="-" />
     <Place Parts_Title_Summary="-" />
@@ -12,6 +15,7 @@
   </Match>
 
   <Match DysplayType="Summary">
+    <Place Parts_CommentForm="Content:10.3" />
     <Place Fields_Common_Text="Content:4" />
     <Place Parts_Title_Summary="Header:0" />
     <Place Parts_Common_Metadata_Summary="Content:3" />

@@ -73,6 +73,9 @@
   <ItemGroup>
     <Content Include="Assets.json" />
     <Content Include="Assets\Styles.less" />
+    <Content Include="Content\Images\AGREE.png" />
+    <Content Include="Content\Images\avatar.png" />
+    <Content Include="Content\Images\DISAGREE.png" />
     <Content Include="Recipes\CreateBasicFeaturedNewsStoryQuery.recipe.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -146,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\News.cshtml" />
@@ -155,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts.News.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.News.Comments.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.News.VoteButtons.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
