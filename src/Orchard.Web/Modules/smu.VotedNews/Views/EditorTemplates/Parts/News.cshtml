@@ -1,0 +1,26 @@
+﻿@using System.Web.Mvc.Html
+@model Smu.VotedNews.Models.NewsPart
+<fieldset>
+    <legend>News Fields</legend>
+
+    <div class="editor-label">@Html.LabelFor(x => x.IsFetured)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.IsFetured)
+        @Html.ValidationMessageFor(x => x.IsFetured)
+    </div>
+    <div class="hint">Select to mark the news story as "featured" to be shown in the featured zone of the front page or on the main topic pages.</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.IsSticky)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.IsSticky)
+        @Html.ValidationMessageFor(x => x.IsSticky)
+    </div>
+    <div class="hint">Select to mark a featured story as "sticky". A sticky story is of highest priority and is always on top. If there are more than one sticky stories they are sorted by date</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Weight)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Weight)
+        @Html.ValidationMessageFor(x => x.Weight)
+    </div>
+    <div class="hint">Enter the weight of the featured story to aid in sorting of the stories. The stories are first sorted by "stickyness", then by weight, then by date</div>
+</fieldset>
